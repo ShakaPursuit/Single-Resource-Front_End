@@ -39,12 +39,6 @@ const formData={name:newPizza.name,
               const data = await response.json();
               console.log(data);
               
-             
-
-              const updatedIndex= (data.length)-1;
-            
-              navigate(`/transactions/${updatedIndex}`)
-              
             } catch (error) {
                 console.error("Fetch error:", error);
             }

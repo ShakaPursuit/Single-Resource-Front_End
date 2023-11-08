@@ -4,11 +4,11 @@ import "/Users/shakalivingstonepursuit/Desktop/SIngle-Resource-Project/Pizza-Fro
 const PizzaMenu = () => {
     const [pizza, setPizza] = useState([]);
 
-    //   const API = import.meta.env.VITE_REACT_API_URL;
 
 
 
-    // const API= import.meta.env.VITE_REACT_API_KEY
+
+    const API= import.meta.env.VITE_REACT_API_URL
 
 
 
@@ -18,7 +18,7 @@ const PizzaMenu = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`http://localhost:9000/allpizzas`);
+                const response = await fetch(`${API}/allpizzas`);
                 if (!response.ok) {
                     throw new Error(`Request failed with status: ${response.status}`);
                 }
@@ -35,6 +35,7 @@ const PizzaMenu = () => {
         }
         fetchData()
     }, [])
+ 
 
     return (<>
 
@@ -42,11 +43,12 @@ const PizzaMenu = () => {
         <div id="pizza" >
 
             {pizza.map((item, index) => {
+       
+                
 
 
-
-
-                return (<><div className="single-pizza" key={pizza.id} id={pizza.id}>
+                return (<><div className="single-pizza" key={item.id} id={item.id}>
+                    <div><img className="pi"src={`${item.name}.png`}/></div>
 
                     <div key={index + 1} id="name">{item.name}</div>
                     <div key={index + 2} id="ingredient">{item.topping}</div>
