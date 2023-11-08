@@ -1,15 +1,16 @@
 import React from "react";
 import "/Users/shakalivingstonepursuit/Desktop/SIngle-Resource-Project/Pizza-FrontEnd/src/index.css"
-
+import Header from "./Header";
 const AboutUs=()=>{
 
 
 
 
     return(<>
+    <Header/>
     <div className="">
       <div className="div">
-        <div className="text-wrapper">ABOUT US</div>
+        {/* <div className="text-wrapper">ABOUT US</div> */}
         <div className="rectangle" />
         <div className="overlap-group">
           <p className="lorem-ipsum-is">

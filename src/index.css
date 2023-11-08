@@ -2,7 +2,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  width:100%;
+  /* width:100%; */
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -336,7 +336,7 @@ button:focus-visible {
 
 .single-pizza{border: 2px solid red}
 .pi{width:200px;height:200px}
-#pizza{width: 100%;}
+/* #pizza{width: 100%;} */
 
 /* @media (prefers-color-scheme: light) {
   :root {
