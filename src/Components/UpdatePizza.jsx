@@ -64,7 +64,7 @@ const EditPizza = () => {
         const fetchData = async () => {
             try {
                 
-              const response = await fetch(`${API}/${index}`, {
+              const response = await fetch(`${API}/${id}`, {
                 method: "PUT",
                 body: JSON.stringify(formData),
                 headers: { "Content-Type": "application/json" }
@@ -82,7 +82,7 @@ const EditPizza = () => {
               const updatedIndex= (data.length)-1;
             
         
-              navigate(`/menu/${updatedIndex}`)
+              navigate(`/menu`)
               
             } catch (error) {
                 console.error("Fetch error:", error);
@@ -128,8 +128,8 @@ const EditPizza = () => {
 
                         <div id="name"><strong>
                             <label id="pizza name">Pizza Name&nbsp;&nbsp;:&nbsp;&nbsp;
-                                <input name="date" id="input1" type="text" value={formData.name} onChange={handleChange}>
-                                </input></label>&nbsp;&nbsp;&nbsp;&nbsp;<label>OriginalName-{`${item.name}`}</label>&nbsp;&nbsp;</strong></div>
+                                <input name="date" id="input1" type="text"  onChange={handleChange}>
+                                </input></label>&nbsp;&nbsp;&nbsp;&nbsp;<label>OriginalName-{`${formData.name}`}</label>&nbsp;&nbsp;</strong></div>
 
                                 <div id="topping"><strong>
                             <label id="pizza-topping">Pizza Topping&nbsp;&nbsp;:&nbsp;&nbsp;

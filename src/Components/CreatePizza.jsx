@@ -1,5 +1,6 @@
 import React,{useState} from "react"
 import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 const CreatePizza=()=>{
 
 
@@ -23,6 +24,7 @@ const formData={name:newPizza.name,
 }
 
 
+const navigate=useNavigate()
     const handlePost=()=>{
        
         const fetchData = async () => {
@@ -56,6 +58,7 @@ const formData={name:newPizza.name,
 const handelSubmit=(e)=>{
     e.preventDefault()
     handlePost()
+    navigate('/menu')
 }
 
 
@@ -83,10 +86,10 @@ const handelSubmit=(e)=>{
 
         <form onSubmit={handelSubmit} id="create-pizza">
             <label>Pizza Name
-                <input type="text" name="text" value={newPizza.name} onChange={handleTextChange}></input>
+                <input type="text" name="name" value={newPizza.name} onChange={handleTextChange}></input>
             </label>
             <label>Ingredients
-                <input type="text" name="ingredients" value={newPizza.ingredient} onChange={handleTextChange}></input>
+                <input type="text" name="ingredient" value={newPizza.ingredient} onChange={handleTextChange}></input>
             </label>
             
             <label>Price
@@ -96,7 +99,7 @@ const handelSubmit=(e)=>{
                 <input type="text" name="topping" value={newPizza.topping} onChange={handleTextChange}></input>
             </label>
             <label> Vegan Friendly
-                <input type="text" name="is vegan friendly" value={newPizza.vegan} onChange={handleTextChange}></input>
+                <input type="text" name="vegan" value={newPizza.vegan} onChange={handleTextChange}></input>
             </label>
             <label>Size
                 <input type="text" name="size" value={newPizza.size} onChange={handleTextChange}></input>
