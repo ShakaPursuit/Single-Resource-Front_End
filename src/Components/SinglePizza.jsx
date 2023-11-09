@@ -11,7 +11,7 @@ const SinglePizza = () => {
     const API = import.meta.env.VITE_REACT_API_URL;
     const navigate = useNavigate();
     const [pizza, setPizza] = useState([
-        // {name:"",ingredient:"",topping:"",size:"",vegan:false,price:""}
+        
     ]);
 
     const { id } = useParams();

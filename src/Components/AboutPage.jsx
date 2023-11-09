@@ -7,7 +7,6 @@ const AboutUs = () => {
       <Header />
       <div className="">
         <div className="div">
-          {/* <div className="text-wrapper">ABOUT US</div> */}
           <div className="rectangle" />
           <div className="overlap-group">
             <p className="lorem-ipsum-is">
@@ -26,7 +25,7 @@ const AboutUs = () => {
               the heart of Italian culinary history.
             </p>
             <div className="rectangle-2" />
-            <div className="text-wrapper-2">READ MORE</div>
+            <div className="text-wrapper-2"></div>
           </div>
           <img
             className="restaurant"

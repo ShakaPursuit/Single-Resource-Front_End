@@ -331,6 +331,13 @@ button:focus-visible {
 .overlap-group-wrapper{border :2px solid maroon;}
 #menu-stretch{width: 100%;}
 #cp{margin-left:200px;margin-bottom: 50px;}
+#Logo{margin-left:50px;}
+.wood{opacity: 50%;;}
+button {
+  background-color: #f9f9f9;
+}
+.overlap-group-wrapper{background-color: red;}
+
 /* header#header{margin:0} */
 /* #pizza{width: 100%;} */
 

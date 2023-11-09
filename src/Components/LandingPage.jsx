@@ -12,6 +12,7 @@ const Landing = () => {
           <div className="div"><Link to="/menu">MENU</Link></div>
           <div className="text-wrapper-2"><Link to="/contact">CONTACT</Link></div>
           <div className="text-wrapper-3"><Link to="/">ABOUT US</Link></div>
+          <img id="Logo"  src="Logo.png"/>
           <img className="wood" alt="Wood" src="wood-2045380-1920-1.png" />
           <div className="rectangle-2" />
           <img className="pizza" alt="Pizza" src="pizza-3000285-1920-1.png" />

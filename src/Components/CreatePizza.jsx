@@ -61,7 +61,7 @@ const handelSubmit=(e)=>{
 
 
     return (<>
-    {/* <header id="header">{ <Header/>}</header> */}
+    
     <div className="">
       <div className="overlap-group-wrapper">
         <div className="overlap-group">
@@ -70,7 +70,7 @@ const handelSubmit=(e)=>{
           <div className="div"><Link to="/menu">MENU</Link></div>
           
           <div className="rectangle-2" />
-          {/* <img className="pizza" alt="Pizza" src="pizza-3000285-1920-1.png" /> */}
+          <img className="pizza" alt="Pizza" src="pizza-3000285-1920-1.png" />
           <div className="rectangle-3" />
           
         
