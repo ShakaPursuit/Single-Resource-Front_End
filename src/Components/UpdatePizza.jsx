@@ -137,24 +137,24 @@ const EditPizza = () => {
                                 </input></label>&nbsp;&nbsp;&nbsp;&nbsp;<label>OriginalToppings-{`${item.topping}`}</label>&nbsp;&nbsp;</strong></div>
 
                                 <div id="ingredient"><strong>
-                            <label id="pizza-ingredient">Pizza Topping&nbsp;&nbsp;:&nbsp;&nbsp;
+                            <label id="pizza-ingredient">Pizza Ingredient&nbsp;&nbsp;:&nbsp;&nbsp;
                                 <input name="date" id="input3" type="text" value={formData.ingredient} onChange={handleChange}>
                                 </input></label>&nbsp;&nbsp;&nbsp;&nbsp;<label>OriginalIngredients-{`${item.ingredient}`}</label>&nbsp;&nbsp;</strong></div>
 
                                 <div id="size"><strong>
-                            <label id="pizza-size">Pizza Topping&nbsp;&nbsp;:&nbsp;&nbsp;
+                            <label id="pizza-size">Pizza Size&nbsp;&nbsp;:&nbsp;&nbsp;
                                 <input name="date" id="input4" type="text" value={formData.size} onChange={handleChange}>
                                 </input></label>&nbsp;&nbsp;&nbsp;&nbsp;<label>OriginalSize-{`${item.size}`}</label>&nbsp;&nbsp;</strong></div>
 
                                 <div id="vegan"><strong>
-                            <label id="pizza-ingredient">Vegan &nbsp;&nbsp;:&nbsp;&nbsp;
+                            <label id="pizza-ingredient">Vegan(T/F) &nbsp;&nbsp;:&nbsp;&nbsp;
                                 <input name="date" id="input5" type="text" value={formData.vegan} onChange={handleChange}>
-                                </input></label>&nbsp;&nbsp;&nbsp;&nbsp;<label>OriginalIngredients-{`${item.vegan}`}</label>&nbsp;&nbsp;</strong></div>
+                                </input></label>&nbsp;&nbsp;&nbsp;&nbsp;<label>Vegan-{`${item.vegan}`}</label>&nbsp;&nbsp;</strong></div>
 
                                 <div id="price"><strong>
-                            <label id="pizza-price">Pizza Topping&nbsp;&nbsp;:&nbsp;&nbsp;
+                            <label id="pizza-price">Pizza Price&nbsp;&nbsp;:&nbsp;&nbsp;
                                 <input name="date" id="input6" type="text" value={formData.price} onChange={handleChange}>
-                                </input></label>&nbsp;&nbsp;&nbsp;&nbsp;<label>OriginalIngredients-{`${item.price}`}</label>&nbsp;&nbsp;</strong></div>
+                                </input></label>&nbsp;&nbsp;&nbsp;&nbsp;<label>OriginalPrice-{`${item.price}`}</label>&nbsp;&nbsp;</strong></div>
                         
                         
                         <div><button type ="submit"> Click to update Changes</button></div>

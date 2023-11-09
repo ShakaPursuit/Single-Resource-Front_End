@@ -48,8 +48,8 @@ const PizzaMenu = () => {
                     <div><img className="pi"src={`${item.name}.png`}/></div>
 
                     <div key={index + 1} id="name"><Link to={`/menu/${item.id}`}>{item.name}</Link></div>
-                    <div key={index + 2} id="ingredient">Toppings{item.topping}</div>
-                    <div>VeganFriendly{item.vegan ? " 🥗":"👎"}</div>
+                    <div key={index + 2} id="ingredient">Toppings:{item.topping}</div>
+                    <div>VeganFriendly:{item.vegan ? " 🥗":"👎"}</div>
                     <div>Size:{item.size}</div>
                     <div>Price:{item.price}</div>
          </div></>)
