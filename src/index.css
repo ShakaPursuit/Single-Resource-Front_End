@@ -32,7 +32,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  width:100%
+  width:100%;
+  padding:50px
   
 }
 
@@ -238,7 +239,7 @@ button:focus-visible {
   top: 27px;
   width: 174px;
 }
-
+.start{justify-content: center;}
 /* //AboutUS */
 
 .desktop {
@@ -329,6 +330,7 @@ button:focus-visible {
 #create-pizza{margin-top:50px;width:175px;padding-left: 1rem;border:5px solid gold}
 .overlap-group-wrapper{border :2px solid maroon;}
 #menu-stretch{width: 100%;}
+#cp{margin-left:200px;margin-bottom: 50px;}
 /* header#header{margin:0} */
 /* #pizza{width: 100%;} */
 

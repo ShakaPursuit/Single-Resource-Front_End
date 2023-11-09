@@ -40,14 +40,15 @@ const PizzaMenu = () => {
  
 
     return (<>
+     <Link to="/create"><button id="cp">Create A Pizza</button></Link>
 
       <div className="overlap-group-wrapper" id="menu-stretch">
         <div className="overlap-group">
           <div className="rectangle" />
           <div className="text-wrapper"><Link to="/home">HOME</Link></div>
           <div className="div"><Link to="/menu">MENU</Link></div>
-          <div className="text-wrapper-2">CONTACT</div>
-          <div className="text-wrapper-3"><Link to="/about">ABOUT US</Link></div>
+          {/* <div className="text-wrapper-2">CONTACT</div>
+          <div className="text-wrapper-3"><Link to="/about">ABOUT US</Link></div> */}
           <div className="rectangle-2" />
           {/* <img className="pizza" alt="Pizza" src="pizza-3000285-1920-1.png" /> */}
           <div className="rectangle-3" />
