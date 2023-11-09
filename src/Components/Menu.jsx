@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "/Users/shakalivingstonepursuit/Desktop/SIngle-Resource-Project/Pizza-FrontEnd/src/index.css"
+import "/Users/jackiecheung/Module_4/SIngle-Resource-Project/Front_end/Single-Resource-Front_End/src/index.css"
 import Header from "./Header";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -20,7 +20,7 @@ const PizzaMenu = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`http://localhost:9000/allpizzas`);
+                const response = await fetch(`http://localhost:8000/allpizzas`);
                 if (!response.ok) {
                     throw new Error(`Request failed with status: ${response.status}`);
                 }

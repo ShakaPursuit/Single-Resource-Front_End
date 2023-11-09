@@ -1,5 +1,5 @@
 import React from "react";
-import "/Users/shakalivingstonepursuit/Desktop/SIngle-Resource-Project/Pizza-FrontEnd/src/index.css"
+import "/Users/jackiecheung/Module_4/SIngle-Resource-Project/Front_end/Single-Resource-Front_End/src/index.css"
 
 import { Link } from "react-router-dom";
 const Landing = () => {
