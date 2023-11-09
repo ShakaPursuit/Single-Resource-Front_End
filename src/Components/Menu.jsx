@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "/Users/shakalivingstonepursuit/Desktop/SIngle-Resource-Project/Pizza-FrontEnd/src/index.css"
 import Header from "./Header";
+import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 const PizzaMenu = () => {
     const [pizza, setPizza] = useState([]);
 
 
 
-
+// const{id}=useParams()
 
     const API= import.meta.env.VITE_REACT_API_URL
 
@@ -43,7 +45,7 @@ const PizzaMenu = () => {
 
         <div id="pizza" >
 
-            {pizza.map((item, index) => {
+            {pizza.map((item, index,id) => {
        
                 
 
@@ -51,7 +53,7 @@ const PizzaMenu = () => {
                 return (<><div className="single-pizza" key={item.id} id={item.id}>
                     <div><img className="pi"src={`${item.name}.png`}/></div>
 
-                    <div key={index + 1} id="name">{item.name}</div>
+                    <div key={index + 1} id="name"><Link to={`/menu/${item.id}`}>{item.name}</Link></div>
                     <div key={index + 2} id="ingredient">Toppings{item.topping}</div>
                     <div>VeganFriendly{item.vegan ? " 🥗":"👎"}</div>
                     <div>Size:{item.size}</div>

@@ -15,10 +15,10 @@ function App() {
      <Router>
       <Routes>
 
+      <Route path="/menu/:id" element={<SinglePizza/>}/>
       <Route path="/home" element={<Landing/>}/>
       <Route path="/about" element={<AboutUs/>}/>
       <Route path="/menu" element={<PizzaMenu/>}/>
-      <Route path="/menu/:id" element={<SinglePizza/>}/>
    
 
       </Routes>
