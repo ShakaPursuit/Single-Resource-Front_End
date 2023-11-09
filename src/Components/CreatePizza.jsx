@@ -1,4 +1,7 @@
 import React,{useState} from "react"
+import "/Users/shakalivingstonepursuit/Desktop/SIngle-Resource-Project/Pizza-FrontEnd/src/index.css"
+import Header from "./Header"
+import { Link } from "react-router-dom"
 const CreatePizza=()=>{
 
 
@@ -60,10 +63,28 @@ const handelSubmit=(e)=>{
 
 
     return (<>
+    {/* <header id="header">{ <Header/>}</header> */}
+    <div className="">
+      <div className="overlap-group-wrapper">
+        <div className="overlap-group">
+          <div className="rectangle" />
+          <div className="text-wrapper"><Link to="/home">HOME</Link></div>
+          <div className="div"><Link to="/menu">MENU</Link></div>
+          <div className="text-wrapper-2">CONTACT</div>
+          <div className="text-wrapper-3"><Link to="/about">ABOUT US</Link></div>
+          <div className="rectangle-2" />
+          {/* <img className="pizza" alt="Pizza" src="pizza-3000285-1920-1.png" /> */}
+          <div className="rectangle-3" />
+          
+        
+        </div>
+      </div>
+    </div>
+   
     
     <div>
 
-        <form onSubmit={handelSubmit}>
+        <form onSubmit={handelSubmit} id="create-pizza">
             <label>Pizza Name
                 <input type="text" name="text" value={newPizza.name} onChange={handleTextChange}></input>
             </label>
@@ -77,7 +98,7 @@ const handelSubmit=(e)=>{
             <label>Topping
                 <input type="text" name="topping" value={newPizza.topping} onChange={handleTextChange}></input>
             </label>
-            <label>Is Vegan Friendly
+            <label> Vegan Friendly
                 <input type="text" name="is vegan friendly" value={newPizza.vegan} onChange={handleTextChange}></input>
             </label>
             <label>Size
@@ -90,6 +111,7 @@ const handelSubmit=(e)=>{
 
         </form>
     </div>
+          <img className="wood" alt="Wood" src="wood-2045380-1920-1.png" />
     
     
     

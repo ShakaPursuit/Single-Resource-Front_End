@@ -31,6 +31,22 @@ const SinglePizza = () => {
 
         fetchData();
     }, [id]);
+    const deleteIndex=(e)=>{
+        fetch(`http://localhost:9000/allpizzas/${id}`,{method:'DELETE'})
+        .then((response)=>{
+
+            if(!response.ok){
+                throw new Error('Something Went Wrong')
+            }
+            navigate('/menu')
+
+        })
+        .catch((e)=>{console.log(e)})
+
+
+
+
+    }
 
     return (
         <>
@@ -49,6 +65,7 @@ const SinglePizza = () => {
            <div>VeganFriendly{item.vegan ? " 🥗":"👎"}</div>
            <div>Size:{item.size}</div>
            <div>Price:{item.price}</div>
+           <Link to={`/menu/${id}/edit`}><button>Edit</button></Link>
 
 
              
@@ -59,6 +76,7 @@ const SinglePizza = () => {
 
            
             </div>
+            <button onClick={deleteIndex}>Delete Pizza</button>
         </>
     );
 };
