@@ -1,5 +1,6 @@
 import React from "react";
-import "/Users/shakalivingstonepursuit/Desktop/SIngle-Resource-Project/Pizza-FrontEnd/src/index.css"
+import '../index.css'
+// import "/Users/shakalivingstonepursuit/Desktop/SIngle-Resource-Project/Pizza-FrontEnd/src/index.css"
 import { Link } from "react-router-dom";
 
 

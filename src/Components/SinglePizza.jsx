@@ -3,8 +3,8 @@ import { useParams } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Header from "./Header";
-import "/Users/shakalivingstonepursuit/Desktop/SIngle-Resource-Project/Pizza-FrontEnd/src/index.css"
-
+// import "/Users/shakalivingstonepursuit/Desktop/SIngle-Resource-Project/Pizza-FrontEnd/src/index.css"
+import '../index.css'
 const SinglePizza = () => {
 
     
