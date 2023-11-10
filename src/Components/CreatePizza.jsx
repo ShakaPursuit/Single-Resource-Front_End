@@ -2,6 +2,7 @@ import React,{useState} from "react"
 import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom"
 const CreatePizza=()=>{
+    const API= import.meta.env.VITE_REACT_API_URL
 
 
     const[newPizza,setNewPizza]=useState({
@@ -29,7 +30,7 @@ const navigate=useNavigate()
        
         const fetchData = async () => {
             try {
-              const response = await fetch(`http://localhost:9000/allpizzas`, {
+              const response = await fetch(`${API}`, {
                 method: "POST",
                 body: JSON.stringify(formData),
                 headers: { "Content-Type": "application/json" }

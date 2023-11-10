@@ -334,7 +334,7 @@ button:focus-visible {
 #Logo{margin-left:50px;}
 .wood{opacity: 50%;;}
 button {
-  background-color: #f9f9f9;
+  background-color:lightcoral;
 }
 .overlap-group-wrapper{background-color: red;}
 
@@ -349,7 +349,5 @@ button {
   a:hover {
     color: #747bff;
   }
-  button {
-    background-color: #f9f9f9;
-  }
+  
 } */
